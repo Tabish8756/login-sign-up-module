@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const ConnectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://tabish8756:L7C3pbRTIw2JvVPA@login-sign-up-module.7yuyxfe.mongodb.net/",
+      "mongodb://127.0.0.1:27017/login-sign-module",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
