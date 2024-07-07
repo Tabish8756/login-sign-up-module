@@ -16,8 +16,14 @@ const UserSchema = mongoose.Schema({
     address:{
         type:String
     },
-    mPin:{
+    m_pin:{
         type:Number
+    },
+    otp_code:{
+        type:Number
+    },
+    otp_expiration:{
+      type:Date
     },
     created_date:{
         type:Date,

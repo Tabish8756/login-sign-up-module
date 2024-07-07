@@ -4,12 +4,16 @@ const findUser = async (userMobileNo) => {
    const userExist = await UserData.findOne({
       mobile_no:userMobileNo
    })
-   console.log('user exist', userExist)
    if(userExist !== null){
-      return true;
+      return{
+         status:true,
+         userData:userExist
+      };
    }
    else{
-      return false;
+      return{
+          status:false
+      }
    }
 }
 
